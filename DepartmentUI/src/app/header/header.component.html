@@ -1,0 +1,175 @@
+<div class="contain">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink=""><img src="../assets/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link hov" href=""   >
+              WHY IET
+            </a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">IET at a Glance</a></li>
+              <li><a class="dropdown-item" href="">Accreditations & Ranking</a></li>
+              <li><a class="dropdown-item" href="">Life at IET</a></li>
+              <li><a class="dropdown-item" href="">Techonology Business Inculbator</a></li>
+              <li><a class="dropdown-item" href="">Career Guidance</a></li>
+              <li><a class="dropdown-item" href="">Student Rewards</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link hov" href=""   >
+              ACADEMICS
+            </a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">Overview</a></li>
+              <li><a class="dropdown-item" href="">Advisory Board</a></li>
+              <li><a class="dropdown-item" href="">Academic Calender</a></li>
+              <li><a class="dropdown-item" href="">Notice</a></li>
+              <li><a class="dropdown-item" href="">Syllabus</a></li>
+              <li><a class="dropdown-item" href="">NAAC</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link hov" href=""   >
+              COURSES
+            </a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">APPLIED SCIENCE AND HUMANITIS</a></li>
+              <li><a class="dropdown-item" href="">E & C ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">COMPUTER SCIENCE</a></li>
+              <li><a class="dropdown-item" href="">MECHANICAL ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">CIVIL ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">ELECTRICAL ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">INFORMATION TECHNOLOGY</a></li>
+              <li><a class="dropdown-item" href="">MCA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link hov" href=""   >
+              ADMISSION
+            </a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">Registration Form</a></li>
+              <li><a class="dropdown-item" href="">Admission Procedure</a></li>
+              <li><a class="dropdown-item" href="">Councling</a></li>
+              <li><a class="dropdown-item" href="">Fee Structure</a></li>
+              <li><a class="dropdown-item" href="">Anti-Ragging</a></li>
+              <li><a class="dropdown-item" href="">AICTE Approvals</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">PLACEMENT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">HAPPENING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href=""   >
+              DIRECTOR SW
+            </a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">Message of Director</a></li>
+              <li><a class="dropdown-item" href=" ">Hostel</a></li>
+              <li><a class="dropdown-item" href="">Scholership</a></li>
+              <li><a class="dropdown-item" href="">Student Discipline Policy</a></li>
+              <li><a class="dropdown-item" href="">Anti-Ragging</a></li>
+              <li><a class="dropdown-item" href="">AICTE Approvals</a></li>
+            </ul>
+          </li>
+          <li class="nav-item user1" *ngIf="userDetails.role == 'Admin'">
+            <a class="nav-link user" routerLink="/dashboard"> <i class="fa-solid fa-user"></i>{{userDetails.fullName}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="horizontal-line"></div>
+</div>
+
+
+
+ <!-- <div class="contain">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink=""><img src="../assets/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link hov" href="">WHY IET</a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">IET at a Glance</a></li>
+              <li><a class="dropdown-item" href="">Accreditations & Ranking</a></li>
+              <li><a class="dropdown-item" href="">Life at IET</a></li>
+              <li><a class="dropdown-item" href="">Technology Business Incubator</a></li>
+              <li><a class="dropdown-item" href="">Career Guidance</a></li>
+              <li><a class="dropdown-item" href="">Student Rewards</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">ACADEMICS</a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">Overview</a></li>
+              <li><a class="dropdown-item" href="">Advisory Board</a></li>
+              <li><a class="dropdown-item" href="">Academic Calendar</a></li>
+              <li><a class="dropdown-item" href="">Notice</a></li>
+              <li><a class="dropdown-item" href="">Syllabus</a></li>
+              <li><a class="dropdown-item" href="">NAAC</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">COURSES</a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">APPLIED SCIENCE AND HUMANITIES</a></li>
+              <li><a class="dropdown-item" href="">E & C ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">COMPUTER SCIENCE</a></li>
+              <li><a class="dropdown-item" href="">MECHANICAL ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">CIVIL ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">ELECTRICAL ENGINEERING</a></li>
+              <li><a class="dropdown-item" href="">INFORMATION TECHNOLOGY</a></li>
+              <li><a class="dropdown-item" href="">MCA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">ADMISSION</a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">Registration Form</a></li>
+              <li><a class="dropdown-item" href="">Admission Procedure</a></li>
+              <li><a class="dropdown-item" href="">Counseling</a></li>
+              <li><a class="dropdown-item" href="">Fee Structure</a></li>
+              <li><a class="dropdown-item" href="">Anti-Ragging</a></li>
+              <li><a class="dropdown-item" href="">AICTE Approvals</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">PLACEMENT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">HAPPENING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hov" href="">DIRECTOR SW</a>
+            <ul class="dropdown-menu bgc">
+              <li><a class="dropdown-item" href="">Message of Director</a></li>
+              <li><a class="dropdown-item" href="">Hostel</a></li>
+              <li><a class="dropdown-item" href="">Scholarship</a></li>
+              <li><a class="dropdown-item" href="">Student Discipline Policy</a></li>
+              <li><a class="dropdown-item" href="">Anti-Ragging</a></li>
+              <li><a class="dropdown-item" href="">AICTE Approvals</a></li>
+            </ul>
+          </li>
+          <li class="nav-item user1" *ngIf="userDetails.role == 'Admin'">
+            <a class="nav-link user" routerLink="/dashboard"><i class="fa-solid fa-user"></i>{{userDetails.fullName}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="horizontal-line"></div>
+</div> -->
